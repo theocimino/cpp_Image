@@ -124,7 +124,7 @@ class CompImage{
 
 int main() {
     string image_path = "MISSU.jpg";
-    Mat image = imread(image_path, IMREAD_GRAYSCALE);
+    Mat image = imread(image_path);
     imwrite("image_origine.png",image);
     if (image.empty()) {
         cerr << "Erreur : Impossible de charger l'image !" << endl;
